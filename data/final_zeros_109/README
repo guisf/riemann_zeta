@@ -1,0 +1,26 @@
+
+The most tricky part was to compute the zeros around 10^9, i.e.
+the zeros from 10^9 - 10^4 until 10^9, so we have
+10001 zeros.
+
+We first generated the zeros using the function `zeros.findzero`,
+then we used `zeros.findzero3` with parameters
+epsilon=1/50, step=0.001, incr=0.001, step_max=0.1
+After that we used Mathematica to compute the remaining bad zeros
+using the approximation provided by FindRoot. Still some bad ones
+remained and then we used `zero.findzero3` with parameters
+epsilon=1/10, step=0.01, incr=0.01, step_max=0.2
+
+The files are:
+
+diff_ourzeros_truezeros_around109*.txt -> the zeros that are different
+
+corrected_zeros*.txt -> the corrected zeros for bad values in each step
+
+ourzeros_around109_corrected*.txt -> the full table with bad zeros replaced
+                                     in each step
+
+ourzeros_around109_final.txt -> final result, all zeros are good
+
+truezeros_around109.txt -> the table that we used to compare our results
+

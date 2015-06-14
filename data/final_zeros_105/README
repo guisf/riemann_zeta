@@ -1,0 +1,37 @@
+
+The final zeros are in the file
+
+`ourzeros105_final.txt`
+
+This file agrees with Odlyzko zeros up to the 9 decimal places, which
+is his last digit. Our results are more precise than this.
+
+It was really painfull to generate this table.
+We first started with the normal solution of the transcendental 
+equation `zeros.findzero`. This yields  ~11.000 results different
+from Odlyzko of a total of 100.000. Then we generate this bad results
+with `zeros.findzero2` which replace this bad ones at about 807 different
+results. Then we used mathematica with the delta perturbation and
+still 45 remained different.
+Then we used `zeros.findzero3` and only 1 results (n=57764) was different.
+Then we corrected this one with Mathematica again with epsilon=10^-6.
+
+The final file is not different in a single number from Odlyzko zeros1.txt
+file.
+
+
+Files
+-----
+
+ourzeros_fixed_105.txt -> result obtained up to zeros.findzero2
+
+diff_odlyzko_fixed_105.txt -> difference between the above and Odlyzko
+
+mathematica_fixed_105.txt -> new zeros computed by Mathematica for the above
+                             different zeros
+newzeros_fixed_mathematica_105.txt -> all the table replaced by the above zeros
+
+diff_odlyzko_newzeros_105.txt -> difference from the above and Odlyzko
+
+ourzeros105_final.txt -> Final result, everything fixed
+
