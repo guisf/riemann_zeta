@@ -13,3 +13,4 @@ Montgomery's conjecture is verified as illustrated in this figure:
 [G. França, A. LeClair, "Transcendental equations satisfied by the individual zeros of Riemann, Dirichlet and modular L-functions,"
 Communications in Number Theory and Physics
 Volume 9 (2015) Number 1](https://dx.doi.org/10.4310/CNTP.2015.v9.n1.a1).
+
